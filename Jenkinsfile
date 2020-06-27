@@ -2,7 +2,9 @@ node {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
+	sh 'yum install make'
         git "https://github.com/mrsaicharan1/Beginning-Jenkins"
+
     }
 
     dir('Lesson5/ActivityA') {
