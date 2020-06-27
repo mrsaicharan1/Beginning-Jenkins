@@ -2,7 +2,7 @@ node {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
-	sh 'yum install make'
+	sh 'sudo yum install make'
         git "https://github.com/mrsaicharan1/Beginning-Jenkins"
 
     }
